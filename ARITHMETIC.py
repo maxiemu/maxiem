@@ -7,6 +7,6 @@ mult = num1 * num2
 div = num1 / num2
 
 print("the Sum is:" + str(add))
-print("the Differenct is:" str(sub))
-print("the Product is:" str(mult))
-print("the Quotient is:" str(div))
+print("the Differenct is:" + str(sub))
+print("the Product is:" + str(mult))
+print("the Quotient is:" + str(div))
