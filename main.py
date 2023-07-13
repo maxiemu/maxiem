@@ -1,21 +1,20 @@
-print("Programmer: Ivan Glenn D Sombito")
-print("Date Created: July 6 2023")
-print("Description of Program: Info")
+#Hotel Fee
+rate_per_day = 1500 #rate per day
+aircon_fee = 50 #aircon fee
+internet_fee = 300 #internet fee
+tv_fee = 100 #tv fee
+evat = .12 #vat
 
+#user input
+num_days = int(input("Enter the number of days:")) #enter hotel days
 
-print("First Name: Ivan Glenn")
-print("Middle Name: Dinio")
-print("Last Name: Sombito")
-print("Course: BSIT")
-print("Year: 3rd")
-print("Age: 20")
-print("Gender: Male")
-print("Civil Status: Single")
-print(" Nationality: Filipino")
+#Compute for the Bill
+amount = rate_per_day * num_days #get the amount depending on the days
+total = amount + aircon_fee #total amount of aircon fee depending on days
+internet_fee = tv_fee #total amount for internet fee depending on days
+tax = total * evat #total vat depending on days
+bill = total + tax #total tax depending on days
 
-print("Motto: Pag kaya nila, pagawa mo sa kanila")
-
-
-print("School: PHINMA Araullo University")
-print("College: CITE")
-print("====================================================")
+print("Number of Days",num_days) #number of days
+print("Final Bill:", bill) #final bill
+print("-----Nothing Follows-----") #print nothing follows
