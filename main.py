@@ -1,20 +1,42 @@
-print("SAS 5")
-print("CONVERSION PROGRAM")
 
-meter = int(input("Enter the Meter to Convert:"))
+#physics calculator program
 
-millimeter = meter * 1000
-centimeter = meter * 100
-decimeter = meter * 10
-kilometer = meter / 1000
-inch = meter * 39.37
-foot = meter * 3.28
-mile = meter / 1609.344
+print("Physics Calculator Menu")
+print("1] Force")
+print("2] Momentum")
+print("3] Velocity")
+print("4] Acceleration")
+print("5] Exit")
 
-print(meter, "Meter to Millimeter", millimeter)
-print(meter, "Meter to Centimeter", centimeter)
-print(meter, "Meter to Decimeter", decimeter)
-print(meter, "Meter to Kilometer", kilometer)
-print(meter, "Meter to Inch", inch)
-print(meter, "Meter to Foot", foot)
-print(meter, "Meter to Mile", mile)
+choice = int(input("Choose [1/2/3/4/5]: "))
+
+if choice == 1:
+    mass = float(input("Enter Mass:"))
+    acceleration = float(input("Enter Acceleration:"))
+    force = mass * acceleration
+    print(f"Force = {force}")
+
+elif choice == 2:
+    mass = float(input("Enter Mass:"))
+    velocity = float(input("Enter Velocity:"))
+    momentum = mass *velocity
+    print(f"Momentum = {momentum}")
+
+elif choice == 3:
+    displacement = float(input("Enter Displacement:"))
+    time = float(input("Enter Time:"))
+    velocity = displacement * time
+    print(f"Velocity = {velocity}")
+
+elif choice == 4:
+    initial_velocity = float(input("Enter Initial Velocity:"))
+    final_velocity = float(input("Enter Final Velocity:"))
+    time = float(input("Enter Time:"))
+    acceleration = (final_velocity - initial_velocity) / time
+    print(f"Acceleration = {acceleration}")
+
+elif choice == 5:
+    print("Thank you for using Physics Calculator Menu!")
+
+else:
+    Print("Invalid choice! Please choose a valid option. Thank you!")
